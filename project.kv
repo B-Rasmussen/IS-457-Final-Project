@@ -1,0 +1,66 @@
+<Main>:
+	canvas:
+		Rectangle:
+			pos: self.pos
+            size: self.size
+			source: 'Wood_texture.jpg'
+	BoxLayout:
+		orientation: 'vertical'
+		padding: '10dp'
+		Label:
+			size_hint_y: 1
+			text: "Rasmussen's Piano"
+			halign: 'center'
+			valign: 'middle'
+			font_size: 25
+		BoxLayout:
+			orientation: 'horizontal'
+			size_hint_y: 4
+			
+      		Button:
+				id: button1
+				text: 'Piano\nkey A'
+				color: 1,0,0,1
+				background_normal: 'Piano_key.png'
+				background_down: 'Piano_key_down.png'
+				on_press: root.sound1()
+			
+      		Button:
+				id: button2
+				text: 'Piano\nkey B'
+				color: 1,0,0,1
+				background_normal: 'Piano_key.png'
+				background_down: 'Piano_key_down.png'
+				on_press: root.sound2()
+        
+			Button:
+				id: button3
+				text: 'Piano\nkey C'
+				color: 1,0,0,1
+				background_normal: 'Piano_key.png'
+				background_down: 'Piano_key_down.png'
+				on_press: root.sound3()
+			
+      		Button:
+				id: button4
+				text: 'Piano\nkey D'
+				color: 1,0,0,1
+				background_normal: 'Piano_key.png'
+				background_down: 'Piano_key_down.png'
+				on_press: root.sound4()
+			
+      		Button:
+				id: button5
+				text: 'Piano\nkey E'
+				color: 1,0,0,1
+				background_normal: 'Piano_key.png'
+				background_down: 'Piano_key_down.png'
+				on_press: root.sound5()
+			
+      		Button:
+				id: button6
+				text: 'Piano\nkey F'
+				color: 1,0,0,1
+				background_normal: 'Piano_key.png'
+				background_down: 'Piano_key_down.png'
+				on_press: root.sound6()
